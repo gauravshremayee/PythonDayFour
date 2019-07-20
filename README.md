@@ -18,10 +18,23 @@ for x in adults:
 
 #Python list comprehension 
 
+#List comprehensions provide a concise way to create lists. 
+
+new_list = []
+for i in old_list:
+    if filter(i):
+        new_list.append(expressions(i))
+You can obtain the same thing using list comprehension:
+new_list = [expression(i) for i in old_list if filter(i)]
+
 
 
 
 #Python lambda function 
+#lambda function is small anonymous function
+
+x = lambda a : a + 10
+print(x(5))
 
 # Take a list of numbers.  
 my_list = [12, 65, 54, 39, 102, 339, 221, 50, 70, ] 
